@@ -1,0 +1,79 @@
+.selector-for-some-widget {
+  box-sizing: ;
+}
+.navbar-brand {
+  text-transform: uppercase;
+}
+.saved-text,
+.scrollspy-example,
+.Jesus-text {
+  padding-left: 2%;
+}
+.saved-text {
+  max-width: 80%;
+  padding-top: 1.5%;
+  padding-left: 3%;
+  font-size: large;
+}
+.navbar {
+  padding-bottom: 3%;
+  background-color: rgb(237, 237, 207);
+}
+#verse:hover {
+  font-weight: bold;
+  color: rgb(49, 43, 43);
+}
+#video {
+  margin: 3% 10%;
+  border-radius: 5ch;
+}
+
+#verse {
+  color: rgb(76, 16, 16);
+
+  max-width: fit-content;
+  font-family: "Caveat";
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  font-size: 19px;
+  font-size: larger;
+}
+#verse:hover,
+verse-number:hover {
+  color: rgb(76, 16, 16);
+  font-weight: bolder;
+}
+.card-body {
+  padding: 0.5%;
+}
+
+strong {
+  font-weight: 500;
+  color: rgb(10, 9, 9);
+}
+strong:hover {
+  font-weight: 600;
+  color: rgb(10, 9, 9);
+}
+
+#link {
+  color: rgb(0, 0, 0);
+  font-family: "Caveat";
+  font-size: larger;
+}
+a:hover {
+  color: rgb(0, 0, 0);
+  font-family: "Caveat";
+  font-size: 20px;
+  font-weight: 600;
+}
+#highlight {
+  max-width: fit-content;
+  font-family: "Caveat";
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+}
+iframe {
+  padding: 5%;
+}

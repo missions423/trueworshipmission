@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+  <script src="connect.js"></script>
+  <head>
+    <title>Resources</title>
+    <style>
+      .video{
+        margin: 0;
+      }
+      @media (max-width: 400px) {
+        iframe {
+          margin-bottom: -50%;
+          
+        }
+      }
+      @media (min-width: 401px) {
+        iframe {
+          margin-bottom: -30%;
+        }
+      }
+      @media (min-width: 676px) {
+        iframe {
+          margin-bottom: -25%;
+        }
+      }
+      @media (min-width: 814px) {
+        iframe {
+          margin-bottom: -20%;
+        }
+      }
+      @media (min-width: 1000px) {
+        iframe {
+          margin-bottom: -15%;
+        }
+      }
+      @media (min-width: 1300px) {
+        iframe {
+          margin-bottom: -10%;
+        }
+      }
+      h1 {
+        text-transform: capitalize;
+        padding-left: 5%;
+        font-weight: 700;
+        margin-bottom: -5%;
+      }
+      .music {
+        background-color: black;
+        padding-bottom: 5%;
+        padding-top: 2%;
+        border-radius: 7px;
+        color: white;
+        margin: 2%;
+      }
+      .content-movies, .more-vids,.cool-vids{
+        list-style-type: none;
+        border-radius: 10px;
+        margin: 3%;
+        border: 50px;
+        padding: 5%;
+       
+       
+      }
+      img {
+        border-radius: 5%;
+        padding: 20px;
+      }
+        .content-movies{
+          margin-bottom: 10%;
+          background-color: rgb(44, 44, 71);
+
+        }
+      .content-movies a{
+        color: white;
+        font-family: "Libre Baskerville" ;
+        
+
+      }
+      .content-movies a:hover{
+        color: white;
+        font-family: "Caveat" ;
+        
+      }
+     .getbible{
+      font-size: 40px;
+      font-family: "Caveat" ;
+
+     }
+     .getbible:hover{
+      font-weight: bolder;    
+      font-family: "Caveat" ;
+      font-size: 40px;
+
+     }
+     .bibletext{
+      display: inline-flex;
+     }
+     .bibletext{
+      margin-top:-20%;
+     }
+     .bibletext img{
+        height: 20px ;     
+}
+     .bible{
+      padding-left: 3%;
+     }
+     .more-vids{
+      background-color: rgba(148, 32, 48, 0.763);
+      color:white;
+     }
+     ul{
+          list-style-type: none;     }
+     .extra li a{
+      color: rgb(255, 255, 255);
+      font-family: "Caveat";
+      font-size: 25px;
+      margin-left: -5%;
+     }
+     .extra  li a:hover{
+      color: rgb(255, 255, 255);
+      font-family: "Caveat";
+      font-size: 25px;
+      font-weight: bolder;
+     }
+     .cool-vids{
+      
+      margin: 3%;
+        border: 50px;
+        padding: 0%;
+       
+     }
+     .cool-vids iframe{
+      
+      border-radius: 12px;
+      border: 5%;
+       
+     }
+     resp-iframe {
+}
+.resp-iframe__container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  padding-top: 56.25%; // video ratio 9 / 16 = 0.5625 ~ 56.25% change this according video ratio
+}
+.resp-iframe__embed {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+      /* .content-movies .movie {
+        padding: 3%;
+      } */
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Noto+Serif+JP:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Sans&family=Libre+Baskerville&family=Lilita+One&family=Merriweather:wght@300&family=Nunito&family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Resources</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <!-- <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="WhoIsJesus.html"
+                >The Life of Jesus</a
+              >
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="testinomys.html">Watch Testimonies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="connect.html">Getting Connected</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Big Questions
+              </a>
+              <ul class="dropdown-menu">
+                <!-- <li>
+                  <a class="dropdown-item" href="#">What is the Gospel?</a>
+                </li> -->
+                <li>
+                  <a class="dropdown-item" href="index.html"
+                    >What must I do to be saved?</a
+                  >
+                </li>
+                <!-- <li>
+                  <a class="dropdown-item" href="#"
+                    >Why did God allow sin to enter the world?</a
+                  >
+                </li> -->
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="music">
+      <h1 style="font-size: 50px; margin-bottom: -2%">Music</h1>
+      <iframe 
+        class="frame"
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcb6CQIjdqKy?utm_source=generator"
+        width="100%"
+        height="352"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+      <iframe
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/playlist/37i9dQZF1DX7fPhUztqfIX?utm_source=generator"
+        width="100%"
+        height="352"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+      <iframe
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/playlist/1nw7X57za6Rt9ZpLWorSOs?utm_source=generator"
+        width="100%"
+        height="352"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+    </div>
+    <div>
+      <h1>TV Shows & Movies</h1>
+      <ul class="content-movies">
+        <div class="movie">
+          <a target="_blank" href="https://watch.thechosen.tv/#carousels"
+            >The Chosen (free)</a
+          >
+        </div>
+
+        <div class="movie">
+          <a target="_blank" href="https://www.youtube.com/watch?v=k1EzpIvpSxU"
+            >I can Only Imagine (free)</a
+          >
+        </div>
+        <div class="movie">
+          <a
+            target="_blank"
+            href="https://tubitv.com/series/4075/the-torchlighters-heroes-of-the-faith?start=true&tracking=google-feed&utm_source=google-feed"
+            >The Tourchlighters (free)</a
+          >
+        </div>
+        <div>
+          <a
+            title="Letters To God"
+            target="_blank"
+            href="https://www.youtube.com/watch?v=x8WtActNJJ8"
+            >Letters to God (free)</a
+          >
+        </div>
+        <div>
+       
+          <a
+            title="superbook"
+            target="_blank"
+            href="https://us-en.superbook.cbn.com/videos"
+            >Superbook(free)</a
+          >
+        
+        
+      </div>
+        <div>
+       
+          <a
+            title="Miracles from Heaven"
+            target="_blank"
+            href="https://www.amazon.com/gp/video/detail/amzn1.dv.gti.f2a9f79a-360b-3833-4c19-b5a10127b283?autoplay=0&ref_=atv_cf_strg_wb"
+            >Miracles From Heaven</a
+          >
+        
+        
+      </div>
+    </div>
+    <div class="bibletext"style="padding-left: 5%;  ">
+      
+      <h2><a  class="getbible" style="color: black;text-decoration:none " target="_blank" href="https://my.bible.com/bible">Read The Bible </a></h2>
+      <a  target="_blank" href="https://www.bible.com/app?_branch_match_id=1112107889479765140&utm_source=Blog&utm_campaign=Blog%20-%20Bible%20App%20Discovery&utm_medium=marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXTywo0EvKTMpJ1UvOz9V3KwxPjnTPD%2FNLSwIAIKxq4CEAAAA%3D">
+        <img class="bibletext" src="YouversionBible.png" style="height: 80px;"></a>
+    </div>
+    <div class ="bible">
+      <a  target="_blank" href="https://apps.apple.com/us/app/bible/id282935706?_branch_match_id=1112107889479765140&utm_source=Bible.com&utm_campaign=Quick%20Link%20-%20App%20Page%20-%20iOS&utm_medium=quick-link&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXTywo0EvKTMpJ1UvOzwXxdDPziwEZjbwoHQAAAA%3D%3D" style="height: 80px;"><img src="app-store-badge2x_140x46.webp" style="height: 80px;"></a>
+      <a  target="_blank" href="https://play.google.com/store/apps/details?id=com.sirma.mobile.bible.android&_branch_match_id=1112107889479765140&utm_source=Bible.com&utm_campaign=Quick%20Link%20-%20App%20Page%20-%20Android&utm_medium=quick-link&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXTywo0EvKTMpJ1UvOzwXxdBPzUoryM1MAYUFTziEAAAA%3D" style="height: 80px;"><img src="google-play-badge2x_140x46.webp" style="height: 80px"></a>
+    </div>
+    </div>
+    <div class="more-vids">
+      <h1 style="margin-left:-5%; margin-top:-2%;">Watch More</h1>
+      <ul class="extra" >
+        <li><a href="https://www.youtube.com/watch?v=NoAqymNcBTk&list=RDGMEMMib4QpREwENw3_jAc0YgNw&start_radio=1&rv=fD7VWFbt96A">Worship Music Upper Room</a></li>
+        <li><a href="https://www.youtube.com/@ahavajerusalem" target="_blank">Sermons (David Wilkerson)</a></li>
+        <li><a target="_blank" href="https://www.youtube.com/@DerekPrinceMinistries">Sermons (Derek Prince)</a></li>
+        <li><a target="_blank" href="https://www.youtube.com/watch?v=_H-CjGkDL9Q">Sid Roth ISN Live Christian Television </a></li>
+        <li><a target="_blank" href="https://www.youtube.com/watch?v=VCBLVWKviso">The Dangers of Sin</a></li>
+        
+      </ul>
+    </div>
+    
+      
+    </div>
+    
+  </body>
+</html>
