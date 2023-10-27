@@ -3,10 +3,33 @@
   <head>
     <style>
       @media (max-width: 400px) {
-        iframe {
-          width:320px;
-          height: 250px;
+        .video-container iframe {
+          position: absolute;
+          width :100%;
+          height:100%;
+          top:0;
+          left:0;
         }
+        .Question{
+          text-align: center;
+          text-transform: capitalize;
+          padding: 4% 2.5% 0% 2.5%;
+          font-weight: bolder;
+        }
+        p{
+          padding: 5% 0 0 15%;
+          text-align: center;
+        }
+        p a{
+         
+          padding:  0 0 15%;
+          text-align: center;
+        }
+        .video-container{
+          padding-bottom: 56.25% ;
+          position: relative;
+        } 
+
         
       }
       @media (min-width: 600px) {
@@ -107,19 +130,15 @@
     </nav>
   <class class="col-8">
     <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-      <h4 id="simple-list-item-1">What Must I Do to Be Saved? </h4>
+      <h4  class="Question" id="simple-list-item-1">What Must I Do to Be Saved? </h4>
       </div>
       <div class="saved-text">
         <p>
       This question is asked in <strong>Acts 2:37</strong> and Peter, a disaple of Jesus replies with the following words
-      
       <a id="verse">"Repent and be baptized every one of you in the name of Jesus Christ
           for the forgiveness of your sins, and you will receive the gift of the Holy Spirit.
       </a>
-      
-      
       In <strong id="verse-number">Acts 16:30</strong> This question is asked again where Paul responds with theses words,
-          
           
             <a id="verse" >“Believe in the Lord Jesus,
               and you will be saved, you and your household.” </a>
@@ -135,8 +154,9 @@
         </p>
         </div>
     
-      <h4 id="simple-list-item-2" class="scrollspy-example">What Does It Mean To Be Saved?</h4>
-      <p class="saved-text">
+      <h4 id="simple-list-item-2" class="scrollspy-example Question">What Does It Mean To Be Saved?</h4>
+      <div class="saved-text">
+      <p>
           The scripture says <a id="verse">everyone has sinned and fallen short of the glory of God</a> <strong id="verse-number"> (Romans 3:23)</strong>. This means everyone 
          has broken God's law. Sin seperates us from God in this life and the next. And God being rightousness and Holy must judge everyone. This occurs after death where everyone will give an account for every word, thought, 
          and deed in their lifetime <strong id="verse-number">(Hebrews 9:27)</strong>. Unless you have let a perfect 
@@ -189,19 +209,22 @@
           He writes His laws on our hearts and puts His Spirit within us. <a id="verse">And all who receive Jesus, who believe in His name, 
             are given the right to become children of God </a>(john 1:12)
     </p>
-    
+  </div>
+  <div class="video-container">
      <iframe height="100%"  src="https://www.youtube-nocookie.com/embed/GjiRz0kyBL4?si=JnEp5l68lL17JUoW"
       title="YouTube video player"
        frameborder="0" 
        fs="0"
-       
+      
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
       allowfullscreen="1"></iframe>
+    </div>
          
     
       </p>
-      <h4  id="repentance" class="scrollspy-example">What Is Repentance</h4>
-      <p class="saved-text"> The bible says, <a id="verse">"For godly grief produces a repentance that leads to salvation
+      <h4  id="repentance" class="Question scrollspy-example">What Is Repentance</h4>
+      <div class="saved-text">
+      <p > The bible says, <a id="verse">"For godly grief produces a repentance that leads to salvation
          without regret, whereas worldly grief produces death."</a> (<strong>2Cor 7:10</strong> ) This verse shows that simply feeing sorry 
          for your sins or having grief isn't repentance. True repentance means turning from your sin and turning to God.
           When someone repents. They are making the choice to change, to sin no more and live according to the Word of God.  
@@ -212,8 +235,10 @@
 
 
       </p>
-      <h4 id="baptisim" class="scrollspy-example">What Is The Importance Of Baptisim?</h4>
-      <p class="saved-text">
+    </div>
+      <h4 id="baptisim" class=" Question">What Is The Importance Of Baptisim?</h4>
+      <div class="saved-text">
+      <p >
       scripture is clear the <a id="verse">"blood of Jesus his Son cleanses us from all sin"</a> (1 John 1:7). And when we choose to repent and believe in Christ 
       <a id="verse">If we confess our sins, he is faithful and just to 
         forgive us our sins and to cleanse us from all unrighteousness </a>"(<strong> 1 John 1:9</strong>.) From scripture we see baptisim does not jusfiy you in the sight fo God, but rather 
@@ -291,9 +316,11 @@
         gift of God is eternal life in Christ Jesus our Lord."
        </a>
       </p>
+    </div>
       
-      <h4 id="believe title" class="scrollspy-example" >What does it mean to believe?</h4>
-      <p class="saved-text">A very common Bible verse says, <a id="verse">"For God so loved the world, 
+      <h4 id="believe title" class="Question scrollspy-example" >What does it mean to believe?</h4>
+      <div class="saved-text">
+      <p >A very common Bible verse says, <a id="verse">"For God so loved the world, 
         that he gave his only Son, that whoever believes 
         in him should not perish but have eternal life."</a>(<strong>John 3:16</strong> ). And another scripture says,
         <a id="verse">"You believe that God is one; you do well. Even the demons 
@@ -318,9 +345,11 @@
             Whoever does not love me does not keep my words."</a>
     
     </p>
+  </div>
 
-      <h4 id="sin?"class="scrollspy-example">What Does The Bible Consider Sin?</h4>
-      <p class="saved-text">
+      <h4 id="sin?"class="Question scrollspy-example">What Does The Bible Consider Sin?</h4>
+      <div class="saved-text">
+      <p >
         There's a lot of confusion on what God considers sin, so What does Jesus say is sinful? 
         Another way of putting this is, what defiles us in the sight of God?
         <br/><br/><a id="verse">
@@ -403,6 +432,7 @@
                   </a>
       
       </p>
+    </div>
     </div>
   </div>
 
