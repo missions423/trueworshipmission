@@ -33,10 +33,11 @@
 
   max-width: fit-content;
   font-family: "Caveat";
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 1.5px;
   font-size: 19px;
   font-size: larger;
+  text-shadow: 5cap black;
 }
 #verse:hover,
 verse-number:hover {
